@@ -1,0 +1,99 @@
+schema:
+  schema_id: sakurawunian
+  name: 山樱无念
+  version: "0.1.0"
+  author:
+    - 深白
+  description: |
+    符合我“优雅”概念的音形
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: ["中文", "西文"]
+  - name: full_shape
+    reset: 0
+    states: ["半角", "全角"]
+
+engine:
+  processors:
+    - ascii_composer
+    - lua_processor@*lutai.key_binder
+    - key_binder
+    - lua_processor@*lutai.editor
+    - lua_processor@*lutai.popping
+    - recognizer
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - abc_segmentor
+    - matcher
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - lua_filter@*lutai.fix
+    - lua_filter@*lutai.postpone
+
+translator:
+  dictionary: sakurawunian
+  enable_sentence: false
+  enable_user_dict: true
+  disable_user_dict_for_patterns:
+    - "^[a-z]{1,3}$"
+  enable_completion: false
+
+speller:
+  alphabet: "qwertyuiopasdfghjklzxcvbnm"
+  algebra:
+    - derive/^(.+)d.d.$/$1
+    - derive/^(.+d.)d.$/$1
+  popping:
+    - match: "[qwertyuiopasfghjklzxcvbnm][a-z](?:d[a-z]){1,2}"
+      accept: "[^ 2345789]"
+    - match: "(?:[qwertyuiopasfghjklzxcvbnm][a-z]){2}"
+      accept: "[^ 2345789d]"
+
+recognizer:
+  import_preset: default
+
+menu:
+  page_size: 8
+  alternative_select_keys: "12345789"
+
+punctuator:
+  half_shape:
+    ',' : { commit: ， }
+    '.' : { commit: 。 }
+    '<' : [ 《, 〈, «, ‹, ⟨, ˂, ˱ ]
+    '>' : [ 》, 〉, », ›, ⟩, ˃, ˲ ]
+    '!' : [ 、, ､, '/', ／, ÷ ]
+    ';' : { commit: ？ }
+    ':' : { commit: ： }
+    '''' : { pair: [ '“', '”' ] }
+    '\' : [ 、, '\', ＼ ]
+    '|' : [ ·, ・, '|', ｜, '§', '¦', '‖', ︴ ]
+    '`' : [ '`', ‵, ‶, ‷, ′, ″, ‴, ⁗ ]
+    '~' : [ '~', ～, ˜, ˷, ⸯ, ≈, ≋, ≃, ≅, ≇, ∽, ⋍, ≌, ﹏, ﹋, ﹌, ︴ ]
+    '/' : { commit: ！ }
+    '@' : [ '@', ©, ®, ℗ ]
+    '%' : [ '%', ％, '°', '℃', ‰, ‱, ℉, ℅, ℆, ℀, ℁, ⅍ ]
+    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤', ₩ ]
+    '^' : { commit: …… }
+    '&' : '&'
+    '*' : [ '*', ＊, ·, ・, ×, ※, ❂, ⁂, ☮, ☯, ☣ ]
+    '(' : （
+    ')' : ）
+    '-' : '-'
+    '_' : ——
+    '+' : '+'
+    '=' : [ '=', 々, 〃 ]
+    '[' : [ 「, 【, 〔, ［, 〚, 〘 ]
+    ']' : { pair: [ '：“', '”' ] }
+    '{' : [ 『, 〖, ｛ ]
+    '}' : [ 』, 〗, ｝ ]
