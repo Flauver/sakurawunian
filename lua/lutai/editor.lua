@@ -21,7 +21,7 @@ local function editor(key_event, env)
     local confirmed_position = context.composition:toSegmentation():get_confirmed_position()
     local previous_caret_pos = context.caret_pos
     local current_input = context.input:sub(confirmed_position + 1, previous_caret_pos)
-    if not rime_api.regex_match(current_input, ".+[qwertyuiopasfghjklzxcvbnm][a-z]d[a-z]") then
+    if not rime_api.regex_match(current_input, ".{2,}[qwertyuiopasfghjklzxcvbnm][a-z]d[a-z]") then
         return snow.kNoop
     end
     -- 如果输入不是 d，还要验证是否有补码
