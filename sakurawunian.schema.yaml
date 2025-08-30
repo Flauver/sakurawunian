@@ -52,13 +52,24 @@ translator:
 speller:
   alphabet: "qwertyuiopasdfghjklzxcvbnm"
   algebra:
-    - derive/^(..)d.d.$/$1
-    - derive/^(..d.)d.$/$1
+    __include: sakurawunian:/feijian
+    __append:
+      - derive/^(..)d.d.$/$1
+      - derive/^(..d.)d.$/$1
   popping:
     - match: "[qwertyuipasfghjklzxcvbnm][a-z](?:d[a-z]){1,2}"
       accept: "[^ 2345789d]"
     - match: "(?:[qwertyuipasfghjklzxcvbnm][a-z]){2}"
       accept: "[^ 2345789d]"
+  
+key_binder:
+  bindings:
+    - match: ".*"
+      accept: ";"
+      send_sequence: "2"
+    - match: ".*"
+      accept: "'"
+      send_sequence: "3"
 
 recognizer:
   import_preset: default
@@ -74,7 +85,7 @@ punctuator:
     '<' : [ 《, 〈, «, ‹, ⟨, ˂, ˱ ]
     '>' : [ 》, 〉, », ›, ⟩, ˃, ˲ ]
     '!' : [ 、, ､, '/', ／, ÷ ]
-    ';' : { commit: ？ }
+    ';' : [ "？" ]
     ':' : { commit: ： }
     '''' : { pair: [ '“', '”' ] }
     '\' : [ 、, '\', ＼ ]

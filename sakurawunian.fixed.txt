@@ -1,26 +1,59 @@
-a	啊
-b	不
-c	此
-e	的
-ot	而
-f	发
-g	个
-h	好
-i	出
-j	就
-k	可
-l	了
-m	么
-n	你
-ow	哦
-p	平
-q	去
+a	而 啊
+aa	阿
+b	不 把 比
+bi	必
+c	才 此 曾
+cl	菜
+cg	层
+e	的 到 都
+ek	倒
+eb	斗
+ei	地
+f	能 发 分
+fa	法
+ff	份
+g	个 给 更
+h	和 会 还
+hv	回
+i	出 成 处
+ig	城
+iu	初
+j	就 见 进
+jm	间
+jb	近
+k	看 可
+ke	克
+l	了 来 里
+li	力
+m	没 吗
+ma	马
+n	你 那
+na	哪
+o	也 哦
+p	得 道 道：“
+q	去 起 前
+qi	其
+qm	千
 r	人
-s	所
-t	他
-u	是
-v	这
-w	我
-x	下
-y	一
-z	在
+s	三 时 送
+ss	松
+t	他 她 它
+ta	塔
+u	是 上 说
+uo	说：“
+v	这 着 真
+ve	者
+vf	阵
+w	我 为
+wz	位
+x	小 下 想
+xd	像
+y	一 有 要
+yb	又
+yk	摇
+ye	夜
+yo	又
+yb	右
+z	在 再 走
+zd	载
+zz	奏
