@@ -47,15 +47,16 @@ translator:
   disable_user_dict_for_patterns:
     - "^[a-z]{1,3}$"
   enable_completion: false
+  disable_postpone_pattern: "^...$|^.{5,}$"
 
 speller:
   alphabet: "qwertyuiopasdfghjklzxcvbnm"
   algebra:
-    - derive/^(.+)d.d.$/$1
-    - derive/^(.+d.)d.$/$1
+    - derive/^(..)d.d.$/$1
+    - derive/^(..d.)d.$/$1
   popping:
     - match: "[qwertyuipasfghjklzxcvbnm][a-z](?:d[a-z]){1,2}"
-      accept: "[^ 2345789]"
+      accept: "[^ 2345789d]"
     - match: "(?:[qwertyuipasfghjklzxcvbnm][a-z]){2}"
       accept: "[^ 2345789d]"
 
