@@ -1,4 +1,4 @@
-a	而 啊
+a	而 二 啊
 aa	阿
 b	不 把 比
 bi	必
@@ -21,30 +21,31 @@ iu	初
 j	就 见 进
 jm	间
 jb	近
-k	看 可
+k	看 可 可以
 ke	克
 l	了 来 里
 li	力
-m	没 吗
+m	没 吗 没有
 ma	马
-n	你 那
+n	你 那 你们
 na	哪
 o	也 哦
 p	得 道 道：“
 q	去 起 前
 qi	其
 qm	千
-r	人
+r	人 如果
 s	三 时 送
 ss	松
 t	他 她 它
 ta	塔
 u	是 上 说
 uo	说：“
+ui	实
 v	这 着 真
 ve	者
 vf	阵
-w	我 为
+w	我 为 为什么
 wz	位
 x	小 下 想
 xd	像
