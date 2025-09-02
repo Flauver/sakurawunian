@@ -8,4 +8,11 @@ feijian:
   - derive/^([jqx])t/$1l
   - derive/^([jqx])w/$1f
   - derive/^(c|ch|d|g|h|k|r|s|sh|t|z|zh)v/$1n
-
+  - derive/^jm/jz
+  - derive/^rf/rl
+  - derive/^uh/uq
+  - derive/^bf/bs
+  - derive/^nj/nw
+  - derive/^my/md
+  - derive/^tx/tw
+  - derive/^nu/je
