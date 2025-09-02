@@ -7,7 +7,7 @@ feijian:
   - derive/^wz/wk
   - derive/^([jqx])t/$1l
   - derive/^([jqx])w/$1f
-  - derive/^(c|ch|d|g|h|k|r|s|sh|t|z|zh)v/$1n
+  - derive/^(c|i|d|g|h|k|r|s|sh|t|z|v)v/$1n
   - derive/^jm/jz
   - derive/^rf/rl
   - derive/^uh/uq
