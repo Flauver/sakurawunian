@@ -39,6 +39,7 @@ engine:
   filters:
     - lua_filter@*lutai.fix
     - lua_filter@*lutai.postpone
+    - lua_filter@*lutai.irre_filter
 
 translator:
   dictionary: sakurawunian
