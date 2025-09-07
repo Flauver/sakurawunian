@@ -58,9 +58,9 @@ speller:
       - derive/^(..)d.d.$/$1
       - derive/^(..d.)d.$/$1
   popping:
-    - match: "[qwertyuipasfghjklzxcvbnm][a-z](?:d[a-z]){1,2}"
+    - match: "[qwertyuiopasfghjklzxcvbnm][a-z](?:d[a-z]){1,2}"
       accept: "[^ 2345789d]"
-    - match: "(?:[qwertyuipasfghjklzxcvbnm][a-z]){2}"
+    - match: "(?:[qwertyuiopasfghjklzxcvbnm][a-z]){2}"
       accept: "[^ 2345789d]"
   
 key_binder:
