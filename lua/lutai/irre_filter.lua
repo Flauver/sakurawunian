@@ -2,28 +2,24 @@
 
 local snow = require "lutai.snow"
 
----@type string[]
-local syllables = {}
-
 ---@param text string
+---@param storage string[]
 ---@return boolean
-local function split(text)
+local function split(text, storage)
     local syllable = rime_api.regex_search(text, "[qwertyuiopasfghjklzxcvbnm][a-z](?:d[a-z]){0,2}$")
     if syllable then
         local has_irre = false
         local len = 0
-        for _, _syllable in ipairs(syllable) do
-            table.insert(syllables, _syllable)
-            len = #_syllable
-            if rime_api.regex_match(_syllable, "(?:yi|ji|bl).*") then
-                has_irre = true
-            end
+        table.insert(storage, syllable[1])
+        len = #syllable[1]
+        if rime_api.regex_match(syllable[1], "(?:yi|ji|bl).*") then
+            has_irre = true
         end
-        local front = split(text:sub(1, #text - len))
+        local front = split(text:sub(1, #text - len), storage)
         return has_irre or front
     end
     if #text > 0 then
-        table.insert(syllables, text)
+        table.insert(storage, text)
     end
     return false
 end
@@ -42,8 +38,8 @@ local function irre_filter(input, env)
         end
         return
     end
-    syllables = {}
-    local has_irre = split(code)
+    local syllables = {}
+    local has_irre = split(code, syllables)
     if not has_irre then
         for cand in input:iter() do
             yield(cand)
