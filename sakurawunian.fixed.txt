@@ -32,6 +32,7 @@ y	一 有 要
 yu	与 语
 yv	与 语
 yb	又 右
+yo	又 右
 z	在 再 走
 zo	做 左
 zlci	再次
@@ -84,6 +85,7 @@ uiyj	实验 试验
 iufa	出发 触发
 lmjx	连接 链接
 ybem	有点 优点
+yoem	有点 优点
 igwz	成为 称为
 igwk	成为 称为
 ugmy	生命 声明
@@ -94,6 +96,7 @@ xlyr	学院 学员
 lmxi	联系 练习
 egji	等级
 uhhl	伤害
+uqhl	伤害
 rfwu	任务
 rlwu	任务
 vumy	著名
@@ -116,3 +119,76 @@ jyji	经济 竞技
 vgfu	政府
 qrli	权力 权利
 moui	模式 漠视
+
+csna	从那 从哪
+ekna	到那 到哪
+emna	点那 点哪
+fhna	放那 放哪
+gena	搁那 搁哪
+ilna	拆那 拆哪
+kjna	看那 看哪
+mlna	买那 买哪
+naar	那儿 哪儿
+nabf	那本 哪本
+nabs	那本 哪本
+nabj	那般 哪般
+nabm	那边 哪边
+nabu	那不 那部
+naci	那次 哪次
+naem	那点 哪点
+naes	那栋 哪栋
+nafh	那方 哪方
+nafi	那一 哪一
+nagb	那狗 哪够
+nage	那个 哪个
+nagf	那根 哪根
+nahl	那还 哪还
+naih	那场 哪场
+naji	那几 哪几
+najm	那件 那间
+najz	那件 那间
+najo	那几 哪几
+naju	那句 那具
+najv	那句 那具
+najw	那家 哪家
+najf	那家 哪家
+nake	那颗 那棵
+nakj	那看 哪堪
+nakr	那款 哪款
+naky	那块 哪块
+nali	那里 哪里
+nalz	那类 哪类
+naml	那买 哪买
+nang	那能 哪能
+nanm	那年 哪年
+napa	哪怕 那怕
+napm	那片 那篇
+nasb	那艘 哪艘
+naso	那所 哪所
+nasr	那算 哪算
+natb	那头 哪头
+natc	那条 哪条
+natk	那套 哪套
+natl	那台 哪台
+natm	那天 哪天
+naui	那是 那时
+navf	那阵 那真
+navh	那张 哪张
+navi	那只 哪知
+navk	那招 哪找
+navs	那种 哪种
+nawz	那位 哪位
+nawk	那位 哪位
+naxd	那项 哪像
+naxx	那些 哪些
+nayb	那有 哪有
+nayo	那有 哪有
+nayh	那样 哪样
+nayi	那一 哪一
+uina	是那 是哪
+vena	这那 这哪
+vuna	住那 住哪
+whna	往那 往哪
+ysna	用那 用哪
+zbna	走那 走哪
+zona	坐那 做那
